@@ -8,7 +8,12 @@ const photos = [
   "photo5.jpg",
 ];
 
-const bgMusic = document.getElementById("bgMusic");
+
+window.addEventListener('load', function() {
+  const audio = document.getElementById("bgMusic");
+  audio.play();
+});
+
 
 let currentPhotoIndex = 0;
 
