@@ -1,0 +1,78 @@
+* {
+  transition: 1s;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+}
+
+#bgMusic{
+  position: absolute;
+  bottom: 0;
+  left: 3rem;
+}
+
+.container {
+  text-align: center;
+  background: #0f0f0f;
+  border-radius: 0.3rem;
+  box-shadow: 0px 3px 3px 3px #111;
+  height: 30rem;
+  width: 17rem;
+  padding: 1rem;
+}
+
+.photo {
+  width: 260px;
+  height: 22rem;
+  margin: 10px;
+  border-radius: 0.3rem;
+  object-fit: cover;
+}
+
+#animateButton {
+  padding: 10px 20px;
+  background-color: #ff5e6c;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+#typingText {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#music-icon {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #fff;
+  position: absolute;
+  bottom: 3rem;
+  background-image: url("music.png"); /* Replace with your own music icon image */
+  background-size: cover;
+  border-radius: 50%;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
